@@ -1,0 +1,56 @@
+.navbar {
+    overflow: hidden;
+    background-color:   #00FFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color:  #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    
+}
+
+.navbar a:hover {
+    background-color: #DC143D;
+    color: #FFFF00;
+}
+
+.h2 {
+    text-align: center;
+    color: #000;
+
+}
+
+
+
+}
+
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear:  both;
+    
+}
+
+.column  {
+    float: left;
+    width: 50%;
+    
+    
+}
+
+
+
+div {
+    height: 25px;
+    width: 300px;
+}

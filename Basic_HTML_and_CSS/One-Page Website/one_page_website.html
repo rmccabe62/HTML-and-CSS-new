@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+	<meta name="viewport" content="width==device-width, initial-scale=1">
 	<head>
 		<title>Golf Cart</title>
-		<link rel="stylessheet" type="text/css" href="css/one_page_website.css">
+		<link rel="stylessheet" type="text/css" href="CSS/one_page_website.css">
+		<script src="JS/one_page_website.js"></script>
 	</head>
 	
 	<body>
@@ -36,59 +38,78 @@
 		<section>
 			<div id="gallery">
 				<h1>Gallery</h1>
-					<div>
-					
-						<!--PHOTO-CONTAINER CALLAWAY-->
-						<div>
-							<div>
-								<img src="./images/thumb/thumbnail_callaway.jpg" alt="callaway">
-								<div>
-									<h3>Click to Enlarge</h3>
-									<p>Callaway is one of the oldest and most
-									respected brands.</p>
-								</div>
-							</div>
-						<div>
-						<!--END PHOTO-CONTAINER CALLAWAY-->
-						
-						<!--PHOTO-CONTAINER TAYLORMADE-->
-						<div>
-							<div>
-								<img src="./images/thumb/thumbnail_tm.jpg" alt="taylormade">
-								<div>
-									<h3>Click to Enlarge</h3>
-									<p>Taylormade is very popular on the PGA Tour.</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO-CONTAINER TAYLORMADE-->
-						
-						<!--PHOTO-CONTAINER PING-->
-						<div>
-							<div>
-								<img src="./images/thumb/thumbnail_ping.jpg" alt="ping">
-								<div>
-									<h3>Click to Enlarge</h3>
-									<p>Ping is popular with the weekend golf warriors.</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO-CONTAINER PING-->
-						
-						<!--PHOTO-CONTAINER MIZUNO-->
-						<div>
-							<div>
-								<img src="./images/thumb/thumbnail_mz.jpg" alt="mizuno">
-								<div>
-									<h3>Click to Enlarge</h3>
-									<p>Mizuno is well liked by european pros.</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO-CONTAINER MIZUNO-->
-						
+				<h2 style="text-align:center">Lightbox</h2>
+				
+					<div class="column">
+						<img src="thumbnail_callaway.jpg" style="width:100%"
+						onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 					</div>
+					<div class="column">
+						<img src="thumbnail_tm.jpg" style="width:100%"
+						onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="thumbnail_ping.jpg" style="width:100%"
+						onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="thumbnail_mz.jpg" style="width:100%"
+						onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+			</div>
+
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+				<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				  <img class="demo cursor" src="thumbnail_callaway.jpg" style="width:100%">
 				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="thumbnail_tm.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="thumbnail_ping.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="thumbnail_mz.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				   <p id="caption"></p>
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="thumbnail_callaway.jpg" style="width:100%"
+					onclick="currentSlide(1)" alt="Callaway">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="thumbnail_tm.jpg" style="width:100%"
+					onclick="currentSlide(2)" alt="TaylorMade">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="thumbnail_ping.jpg" style="width:100%"
+					onclick="currentSlide(3)" alt="Ping">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="thumbnail_mz.jpg" style="width:100%"
+					onclick="currentSlide(4)" alt="Mizuno">
+				</div>
+			  </div>
+			</div>
+
 			</section>
 			 <!--END GALLERY-->
 			 

@@ -3,7 +3,7 @@
     padding: 0 8px;
 }
 
-.row::after  {
+.row:after  {
     content: "";
     display: table;
     clear: both;
@@ -13,6 +13,7 @@
 .column    {
     float: left;
     width: 25%;
+    padding: 0;
 }
 
 /* The Modal (background) */
@@ -36,7 +37,7 @@
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 /* The Close Button */
@@ -58,10 +59,7 @@
 
 .mySlides   {
   display: none;
-}
-
-.cursor {
-  cursor: pointer;
+  
 }
 
 /* Next and previous buttons */

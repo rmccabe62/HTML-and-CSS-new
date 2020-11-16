@@ -1,14 +1,5 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80%;
-    margin: 0;
-}
 
-*   {
-    box-sizing: border-box;
-}
-
-.row > column   {
+.row > .column   {
     padding: 0 8px;
 }
 
@@ -18,6 +9,7 @@ body {
     clear: both;
 }
 
+/* Create four equal colums that float next to each other */
 .column    {
     float: left;
     width: 25%;
@@ -111,9 +103,6 @@ body {
   top: 0;
 }
 
-img {
-  margin-bottom: -4px;
-}
 
 .caption-container  {
   text-align: center;
@@ -122,7 +111,7 @@ img {
   color: #fff;
 }
 
-.demo   {
+img.demo   {
   opacity: 0.6;
 }
 

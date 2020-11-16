@@ -1,7 +1,7 @@
 
 //Retrieves an element by id, sets up the light box, and sets display to block style
 function openModal()    {
-  document.getElementById("myModal").style.display ="block";
+  document.getElementById("myModal").style.display = "block";
 }
 
 //Retrieves an element by id and closes the light box
@@ -38,6 +38,6 @@ function showSlides(n)  {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += "active";
+  dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }

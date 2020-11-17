@@ -41,16 +41,7 @@ li a  {
     
   }
 
-  .main {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-  .section  {
-    width: 50%;
-    height: 100%;
-  }
-
+  
   
   
 
@@ -68,13 +59,9 @@ li a  {
 .column    {
     float: left;
     width: 20%;
+    
 }
 
-.column2  {
-  float: left;
-  width: 50%;
-  padding-left: 70px;
-}
 
 /* The Modal (background) */
 .modal  {

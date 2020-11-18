@@ -42,7 +42,7 @@
           <h1 class="display-4 text-light">Academy Cinemas</h1>
           <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
           <!--movie deals-->
-          <button type="button" data-toggle="modal" data-target="#register">See our movie deals</button>
+          <button type="button" class="btn btn-outline-primary data-toggle="modal" data-target="#register">See our movie deals...</button>
         </div>
       </div>
 
@@ -160,30 +160,50 @@
         <a href="#deals"></a>
 
 
-            <form>
+            
               <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
               
               <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals!">
-                Sign Up<button>
+                Sign Up</button>
 
-                  
-
+                 
 
             <!-- Modal -->
             <div class="modal fade" id="register">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                  <div class="modal-header"></div>
+                  <div class="modal-header">
                     <h5 class="modal-title">Register to Receive Movie deals</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                  
+                  </div>
                   <div class="modal-body">
-                </div>
+                    <form>
+                      <fieldset class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email...">
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password...">
+                      </fieldset>
+                    </form>
+
+
+                    
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
@@ -191,7 +211,7 @@
                 </div>
               </div>
             </div>
-            </form>
+            
       </div>
 
       <div class="container my-5">
